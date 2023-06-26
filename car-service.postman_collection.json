@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.54.53:8990/car-service/rest/v1/car-types/all",
+					"raw": "http://127.0.0.1:8990/car-service/rest/v1/car-types/all",
 					"protocol": "http",
 					"host": [
 						"192",
@@ -38,7 +38,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.54.53:8990/car-service/rest/v1/car-types/{make}",
+					"raw": "http://127.0.0.1:8990/car-service/rest/v1/car-types/{make}",
 					"protocol": "http",
 					"host": [
 						"192",
@@ -64,7 +64,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://192.168.54.53:8990/car-service/rest/v1/cars/{car-type-id}?pageSize=5&pageNumber=0",
+					"raw": "http://127.0.0.1:8990/car-service/rest/v1/cars/{car-type-id}?pageSize=5&pageNumber=0",
 					"protocol": "http",
 					"host": [
 						"192",
