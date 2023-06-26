@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "c616e3b9-aa63-47e5-ac39-88d24e155668",
+		"name": "car-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7501556"
+	},
+	"item": [
+		{
+			"name": "1- All Car Maker's Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.54.53:8990/car-service/rest/v1/car-types/all",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"54",
+						"53"
+					],
+					"port": "8990",
+					"path": [
+						"car-service",
+						"rest",
+						"v1",
+						"car-types",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2- get car types by maker's name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.54.53:8990/car-service/rest/v1/car-types/{make}",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"54",
+						"53"
+					],
+					"port": "8990",
+					"path": [
+						"car-service",
+						"rest",
+						"v1",
+						"car-types",
+						"{make}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3- get car  list by car type service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.54.53:8990/car-service/rest/v1/cars/{car-type-id}?pageSize=5&pageNumber=0",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"54",
+						"53"
+					],
+					"port": "8990",
+					"path": [
+						"car-service",
+						"rest",
+						"v1",
+						"cars",
+						"{car-type-id}"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "pageNumber",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

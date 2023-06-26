@@ -1,0 +1,46 @@
+entity Car {
+  id Long
+  registration String
+  vin String
+  mileage Integer
+  passengerCount Integer
+  productionYear String
+}
+
+entity CarStatus {
+  id Long
+  text Status
+  code String
+}
+
+enum Status {
+  AVAILABLE, RENTED, RESERVED, OUT_OF_CLASS, MAINTENANCE
+}
+
+entity CarType {
+  id Long
+  model String
+  make String
+  category String
+  needDriver Boolean
+  price String
+}
+
+entity Color {
+  id Long
+  name String
+  code String
+}
+
+
+relationship OneToMany {
+  CarStatus to Car{status}
+  CarType to Car{type}
+  Color to Car{color}
+}
+
+
+// Set pagination options
+paginate Car with pagination
+
+
