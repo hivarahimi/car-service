@@ -107,16 +107,5 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>nexus-deployment</id>
-            <name>card team nexus server</name>
-            <url>http://192.168.54.97:9091/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-deployment</id>
-            <name>card team nexus server</name>
-            <url>http://192.168.54.97:9091/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+   
 </project>
